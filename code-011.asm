@@ -1,0 +1,28 @@
+; A = (0xE2 | 0x5D) ^ 0x2F
+; B = (0xFE & 0x95)
+; C = (~0x3F) << 1
+; D = 0x8E >> 2
+; A = B, B = A, C = D, D = C
+
+mov a, 0xe2
+or a, 0x5d
+xor a, 0x2f
+
+mov b, 0xfe
+and b, 0x95
+
+mov c, 0x3f
+not c
+shl c, 1
+
+mov d, 0x8e
+shr d, 2
+
+push a
+push b
+pop b
+pop a
+push c
+push d
+pop c
+pop d
