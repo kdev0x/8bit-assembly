@@ -1,4 +1,4 @@
-;msg = "welome to python"
+;msg = "welcome to python"
 ;print(msg)
 
 jmp beg_code
