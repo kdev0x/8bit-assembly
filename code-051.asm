@@ -1,5 +1,5 @@
 jmp code
-message: db "Visual Studio Code>Pycharm "
+message: db "Visual Studio Code>Pycharm"
          db 0
 code:
 mov a, message 
