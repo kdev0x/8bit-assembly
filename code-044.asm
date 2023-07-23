@@ -1,5 +1,5 @@
-MOV A, 11111111b
-mov b, 00000001b
+MOV A, 0xFF
+mov b, 0x01
 mov c, 0
 mov d, 0
 loop:
